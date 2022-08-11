@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/coo.jpeg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+  {% include "school/navbar.html" %}
+  <br>
+  <br>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br>
+    <h1 class="display-5 glow" style="color:black"><b>Student Info</b></h1>
+    <h1 class="display-5 glow" style="color:black"><b>Management System</b></h1>
+    <br><br>
+    <h3 class="text-center" style="color:black; font-size: 15px">Made by: Shivani Joshi (112003058) and Juhi Shekokar (112003059)</h3>
+    <br><br><br><br><br>
+    <p class="lead">
+      <a class="btn btn-danger btn-lg" href="/studentsignup" role="button">Sign Up as Student</a>
+    </p>
+    <br><br>
+  </div>
+
+  {% include "school/footer.html" %}
+</body>
+
+</html>
